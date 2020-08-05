@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+
+        <!-- Primary Meta Tags -->
+        <title>Vedmuni User Access</title>
+        <meta name="title" content="Vedmuni User Access">
+        <meta name="description" content="Crowd Management Application that helps business and public locations keep their customers and users safe by facilitating the maintaining of social distancing.">
+        <link rel="shortcut icon" href="CrowdsToday.png" type="image/x-icon">
+        <link rel="icon" href="CrowdsToday.png" type="image/x-icon">
+        <link rel="manifest" href="/manifest.json">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://crowds.today/">
+        <meta property="og:title" content="Crowd Management Application">
+        <meta property="og:description" content="Crowd Management Application that helps business and public locations keep their customers and users safe by facilitating the maintaining of social distancing.">
+        <meta property="og:image" content="https://d2cz5pbqz5uqiu.cloudfront.net/logo/crowdLogo.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://crowds.today/">
+        <meta property="twitter:title" content="Crowd Management Application">
+        <meta property="twitter:description" content="Crowd Management Application that helps business and public locations keep their customers and users safe by facilitating the maintaining of social distancing.">
+        <meta property="twitter:image" content="https://d2cz5pbqz5uqiu.cloudfront.net/logo/crowdLogo.png">
+
+        <!-- Angularjs material css -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
+    </head>
+    <body ng-app="Vedmuni-user"  layout="column" ng-controller="VUAppController" ng-cloak>
+        <div id="flash-div" class="md-whiteframe-4dp"></div>
+        <div layout-padding ng-if="online === false"
+             class="no-connection">
+             <p class="loading-screen-block">
+                <span class="fd-logo-bg-circle">
+                    <img src="https://d2cz5pbqz5uqiu.cloudfront.net/logo/new/logo_150x150.png" alt="logo" style="width:100px;height:100px;border-radius:5px;">
+                </span>
+            </p>
+            <p style="font-size: 24px; color:whitesmoke;letter-spacing: 1.1px;">
+                Problem with Internet Connection.
+            </p>
+        </div>
+        <div ng-if="bootstrapFlag && online"
+             class="bootstrap-app">
+
+            <p class="loading-screen-block">
+                <span class="fd-logo-bg-circle">
+                    <img src="https://d2cz5pbqz5uqiu.cloudfront.net/logo/new/logo_150x150.png" alt="logo"
+                     style="width:100px;height:100px;border-radius:5px;">
+                </span>
+            </p>
+
+            <div style="text-align: center;color:white;">
+                Loading App...
+            </div>
+        </div>
+        <div  layout="row" flex>
+            <div ng-view flex id="fd-ng-view"></div>
+        </div>
+
+        <div id="common-message">
+        </div>
+        <!-- Js files -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/libs/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/assets/libs/angular/angular-route.min.js"></script>
+        <script type="text/javascript" src="/assets/libs/angular-css.min.js"></script>
+        <script type="text/javascript" src="/assets/libs/angular/angular-animate.min.js"></script>
+        <script type="text/javascript" src="/assets/libs/angular/angular-aria.min.js"></script>
+        <script type="text/javascript" src="/assets/libs/angular/angular-messages.min.js"></script>
+        <script type="text/javascript" src="/assets/libs/angular-material.min.js"></script>
+        <script type="text/javascript" src="/assets/libs/angular-local-storage.min.js"></script>
+        <script type="text/javascript" src="/assets/libs/angular/angular-sanitize.min.js"></script>
+
+        <script type="text/javascript" src="min/app.js?0.0.2"></script>
+    </body>
+</html>

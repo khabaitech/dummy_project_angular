@@ -1,0 +1,29 @@
+{
+  "name": "fandoro-frontend",
+  "version": "1.0.0",
+  "description": "fandoro frontend",
+  "main": "index.html",
+  "dependencies": {
+    "angular-socialshare": "^2.3.11",
+    "angular-ui-carousel": "^0.1.10",
+    "angularjs-datepicker": "^2.1.23",
+    "grunt-cli": "^1.2.0",
+    "js-sha256": "^0.5.0",
+    "satellizer": "^0.15.5"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ng-annotate": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
